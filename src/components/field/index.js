@@ -128,9 +128,9 @@ export default class TextField extends PureComponent {
   componentWillReceiveProps(props) {
     let { error } = this.state;
 
-    if (null != props.value) {
+    //if (null != props.value) {
       this.setState({ text: props.value });
-    }
+    //}
 
     if (props.error && props.error !== error) {
       this.setState({ error: props.error });
